@@ -25,4 +25,13 @@ t = -5:0.01:10;
 
 % plot(t,x);
 % plot(t,y);
+
+%% minha resposta
+% x = t.*(-u(t-1)+u(t-2))+t.*(u(t-2)-u(t-3))+u(t-3)-u(t-4); 
+
+%% resposta correta
+x = (t-2).*(u(t-1)-u(t-3))+u(t-3)-u(t-4);
+plot(t,x);
+
+%% plotagem com melhor visibilidade
 axis([-5 10 -2 5])
